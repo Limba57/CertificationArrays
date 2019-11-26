@@ -1,5 +1,7 @@
 package UsingArrays;
 
+import java.util.Arrays;
+
 public class UsingArrays {
 
     public static void main(String[] args) {
@@ -11,5 +13,38 @@ public class UsingArrays {
         System.out.println(pets[2]);
 //        System.out.println(pets[3]); // throws ArrayIndexOutOfBound
 
+        pets[0] = "bird";
+        for (int i = 0; i < pets.length; i++) {
+            System.out.println(pets[i]);
+        }
+
+        for (int i = 0; i <= pets.length - 1; i++) {
+            System.out.println(pets[i]);
+        }
+
+        System.out.println(pets);
+        System.out.println(Arrays.toString(pets));
+
+        int[] numbers = new int[5];
+        System.out.println(Arrays.toString(numbers));
+        String[] newPets = new String[5];
+        System.out.println(Arrays.toString(newPets));
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = i + 10;
+        }
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("numbers["+i+"]= "+numbers[i]);
+        }
+
+        System.out.println(numbers);
+        System.out.println(Arrays.toString(numbers));
+
+        Integer[] nums = new Integer[4];
+        System.out.println(Arrays.toString(nums));
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = i % 3;
+        }
+        System.out.println(Arrays.toString(nums));
     }
 }
